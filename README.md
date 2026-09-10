@@ -8,4 +8,8 @@
 
 회의 결과는 수동 갱신합니다. 내용의 기준일과 설계·검토·실행 상태를 구분하고 이전 상태는 Git 이력으로 보존합니다.
 
-게시 설정: GitHub Pages의 브랜치 게시에서 `pages` 브랜치, 루트(`/`)를 사용합니다. 실제 배포 URL과 배포 성공 확인은 로그인 후 기록할 예정입니다.
+페이지: https://contentscoin.github.io/ai-travel-hub/
+
+저장소: https://github.com/contentscoin/ai-travel-hub
+
+게시 설정: GitHub Pages의 브랜치 게시에서 `pages` 브랜치, 루트(`/`)를 사용합니다. 해당 브랜치에 변경 사항을 푸시하면 Pages가 다시 배포합니다.
