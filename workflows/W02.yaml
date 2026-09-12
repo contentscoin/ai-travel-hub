@@ -1,0 +1,19 @@
+name: ai-travel-w02
+description: "W02 수요·실험 기획 — 수동 시작 업무 안내; 실제 도구 실행 없음"
+enabled: true
+trigger:
+  on: message_posted
+  filter: 'false'
+steps:
+  - id: checklist
+    action: send_message
+    reply_in_thread: false
+    text: |-
+      [업무 체크리스트] W02 수요·실험 기획
+      입력·작업: 승인 목표 또는 수요 변화 → 대상 고객·검색 수요·경쟁 비교 → 가설과 지표·분모·중복 제거·관측기간·최소표본 정의
+      담당·검수 후보: ux-researcher·growth-analyst / product-planner·marketing-strategist
+      산출물·인계: 출처 있는 수요 요약·실험 ID → W03/W04/W11
+      실패·완료 기준: 제주·블로그를 검증된 시장으로 취급하지 않음; 지표·조건 변경은 새 실험 ID, 자료 부족은 보류
+      공통: 작업 ID·근거 버전·실행자·별도 검수자·산출물 URL·차단/재개 조건·접수 증거를 기록하세요.
+      이 카드는 안내 게시입니다. 실행·배정·승인·완료를 자동 처리하지 않습니다.
+      운영표: https://contentscoin.github.io/ai-travel-hub/#w02

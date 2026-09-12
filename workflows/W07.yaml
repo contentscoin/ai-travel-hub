@@ -1,0 +1,19 @@
+name: ai-travel-w07
+description: "W07 영상·오디오 제작 — 수동 시작 업무 안내; 실제 도구 실행 없음"
+enabled: true
+trigger:
+  on: message_posted
+  filter: 'false'
+steps:
+  - id: checklist
+    action: send_message
+    reply_in_thread: false
+    text: |-
+      [업무 체크리스트] W07 영상·오디오 제작
+      입력·작업: 선정 원고+권리 → 스토리보드·이미지·영상·자막/오디오 패키지 → 단계별 검수
+      담당·검수 후보: video-producer·video-editor / video-director
+      산출물·인계: 영상 또는 준비 패키지·소재/권리 버전·비용 증거 → W10/W12
+      실패·완료 기준: 준비 패키지와 생성 완료 구분; 적용되는 이미지 승인·렌더 승인 조건 확인. 렌더 중 권리 철회 시 늦은 성공도 격리, 불명 비용은 대조 전 해제 금지
+      공통: 작업 ID·근거 버전·실행자·별도 검수자·산출물 URL·차단/재개 조건·접수 증거를 기록하세요.
+      이 카드는 안내 게시입니다. 실행·배정·승인·완료를 자동 처리하지 않습니다.
+      운영표: https://contentscoin.github.io/ai-travel-hub/#w07

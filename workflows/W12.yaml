@@ -1,0 +1,19 @@
+name: ai-travel-w12
+description: "W12 정산·비용·수익 대조 — 수동 시작 업무 안내; 실제 도구 실행 없음"
+enabled: true
+trigger:
+  on: message_posted
+  filter: 'false'
+steps:
+  - id: checklist
+    action: send_message
+    reply_in_thread: false
+    text: |-
+      [업무 체크리스트] W12 정산·비용·수익 대조
+      입력·작업: 파트너 명세/입금 또는 비용 발생 → 예상·확정·취소/조정·입금 구분 → 제작/도구/광고비 대조
+      담당·검수 후보: growth-analyst·agentmaker / jake, 연결 검수 dev-lead
+      산출물·인계: 기간별 정산 대조표·미수/불일치 목록 → W01, 기술 불일치 W13
+      실패·완료 기준: 수수료율·정산 주기·세무 조건은 확인된 값만 사용. 주문 중복·취소 소급 반영·입금 차이는 예외 큐; 리워드 지급 워크플로는 도입 결정과 약관 확인 전 비활성
+      공통: 작업 ID·근거 버전·실행자·별도 검수자·산출물 URL·차단/재개 조건·접수 증거를 기록하세요.
+      이 카드는 안내 게시입니다. 실행·배정·승인·완료를 자동 처리하지 않습니다.
+      운영표: https://contentscoin.github.io/ai-travel-hub/#w12

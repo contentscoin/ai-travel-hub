@@ -1,0 +1,19 @@
+name: ai-travel-w14
+description: "W14 팀·권한·문서·업무 인계 — 수동 시작 업무 안내; 실제 도구 실행 없음"
+enabled: true
+trigger:
+  on: message_posted
+  filter: 'false'
+steps:
+  - id: checklist
+    action: send_message
+    reply_in_thread: false
+    text: |-
+      [업무 체크리스트] W14 팀·권한·문서·업무 인계
+      입력·작업: 업무 생성·담당 변경·접근 권한 변경·회의 결정 → 책임자/검수자 지정 → 서명 배정·수신 확인 → 문서/허브 갱신·이력 보존
+      담당·검수 후보: project-coordinator·agentmaker / product-planner, 권한 변경 권한자
+      산출물·인계: 작업 현황·권한 기록·회의 결론·최신 허브 → 전체 워크플로
+      실패·완료 기준: 멘션 무응답·하네스 실패·휴무는 대체 담당/블로커로 기록. 권한 회수 시 예약된 외부 작업도 차단; 오래된 승인/버전 재사용 방지. 초안·등록·실행·검증 상태 분리
+      공통: 작업 ID·근거 버전·실행자·별도 검수자·산출물 URL·차단/재개 조건·접수 증거를 기록하세요.
+      이 카드는 안내 게시입니다. 실행·배정·승인·완료를 자동 처리하지 않습니다.
+      운영표: https://contentscoin.github.io/ai-travel-hub/#w14

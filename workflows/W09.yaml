@@ -1,0 +1,19 @@
+name: ai-travel-w09
+description: "W09 배포·변경·검수 — 수동 시작 업무 안내; 실제 도구 실행 없음"
+enabled: true
+trigger:
+  on: message_posted
+  filter: 'false'
+steps:
+  - id: checklist
+    action: send_message
+    reply_in_thread: false
+    text: |-
+      [업무 체크리스트] W09 배포·변경·검수
+      입력·작업: 구현+디자인+콘텐츠 후보 → 통합 확인·버전 고정 → 배포 → 실제 링크/모바일 동작 확인
+      담당·검수 후보: dev-ops / dev-lead·design-lead
+      산출물·인계: 배포 버전·실제 URL·검증 증거·복구 지점 → W10/W11/W13
+      실패·완료 기준: 빌드 성공과 사용자 접근 성공 구분. 잘못된 배포는 영향 범위에 맞춰 복구하고 게시 큐 차단; 공개 허브에는 내부 키·개인정보 제외
+      공통: 작업 ID·근거 버전·실행자·별도 검수자·산출물 URL·차단/재개 조건·접수 증거를 기록하세요.
+      이 카드는 안내 게시입니다. 실행·배정·승인·완료를 자동 처리하지 않습니다.
+      운영표: https://contentscoin.github.io/ai-travel-hub/#w09
